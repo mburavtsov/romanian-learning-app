@@ -4,10 +4,10 @@ After=network.target
 
 [Service]
 Type=simple
-User=www-data
+User=mb
 WorkingDirectory=/opt/romanian-learning-app
 EnvironmentFile=/opt/romanian-learning-app/.env
-ExecStart=/root/.local/bin/uv run bot.py
+ExecStart=/home/mb/.local/bin/uv run bot.py
 Restart=on-failure
 RestartSec=5
 
