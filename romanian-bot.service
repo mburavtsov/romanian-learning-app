@@ -1,0 +1,15 @@
+[Unit]
+Description=Romanian Learning Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/romanian-learning-app
+EnvironmentFile=/opt/romanian-learning-app/.env
+ExecStart=/root/.local/bin/uv run bot.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
