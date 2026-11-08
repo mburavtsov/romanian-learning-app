@@ -1,6 +1,7 @@
 import logging
 import os
 import random
+from datetime import date
 from typing import cast
 
 from dotenv import load_dotenv
@@ -11,6 +12,7 @@ from telegram.ext import (
     CallbackQueryHandler,
     CommandHandler,
     ContextTypes,
+    TypeHandler,
 )
 
 import db
@@ -34,6 +36,17 @@ verbs: list[dict] = []
 # In-memory session state per user_id
 sessions: dict[int, dict] = {}
 
+LEVEL_LABELS = {
+    50: "Top 50 most common verbs",
+    150: "Top 150 verbs",
+    0: "All verbs",
+}
+
+
+def _deck(session: dict) -> list[dict]:
+    """verbs.json is ordered by frequency, so "top N" is just a slice."""
+    return verbs[: session["level"]] if session["level"] else verbs
+
 
 def _session(user_id: int) -> dict:
     if user_id not in sessions:
@@ -41,6 +54,7 @@ def _session(user_id: int) -> dict:
             "playing": False,
             "session_correct": 0,
             "session_total": 0,
+            "level": db.DEFAULT_LEVEL,
         }
     return sessions[user_id]
 
@@ -49,8 +63,17 @@ def _main_menu() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("▶️ Play", callback_data="menu:play")],
         [InlineKeyboardButton("📊 Stats", callback_data="menu:stats")],
+        [InlineKeyboardButton("🎯 Level", callback_data="menu:level")],
         [InlineKeyboardButton("🗑 Reset stats", callback_data="menu:reset_ask")],
     ])
+
+
+def _level_menu() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        [[InlineKeyboardButton(label, callback_data=f"level:{size}")]
+         for size, label in LEVEL_LABELS.items()]
+        + [[InlineKeyboardButton("⬅️ Back", callback_data="menu:main")]]
+    )
 
 
 async def _send_summary_and_menu(
@@ -90,12 +113,13 @@ async def _drop_card_keyboard(user_id: int, context: ContextTypes.DEFAULT_TYPE) 
 async def _send_card(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
     session = _session(user_id)
     await _drop_card_keyboard(user_id, context)
+    deck = _deck(session)
     all_stats = await db.get_all_stats(user_id)
     stats = {(row[0], row[1]): row[2] for row in all_stats}
 
     direction = random.choice(DIRECTIONS)
-    word = quiz.select_word(verbs, stats, direction)
-    card = quiz.build_card(word, verbs, direction)
+    word = quiz.select_word(deck, stats, direction)
+    card = quiz.build_card(word, deck, direction)
 
     session["correct_answer"] = card["correct_answer"]
 
@@ -130,15 +154,14 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         "👋 *Romanian Verb Trainer*\n\n"
         "I'll show you Romanian verbs — pick the correct translation.\n"
         "A word is *mastered* once you answer it correctly 10 times in a row.\n"
-        "Each session is *10 cards*.",
+        "Each session is *10 cards*, and finishing one earns points.\n"
+        "Start at the *top 50 most common* verbs and raise the level when ready.",
         reply_markup=_main_menu(),
         parse_mode="Markdown",
     )
 
 
-async def cmd_play(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    assert update.effective_user
-    user_id = update.effective_user.id
+async def _start_session(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
     session = _session(user_id)
     session["playing"] = True
     session["session_correct"] = 0
@@ -146,11 +169,17 @@ async def cmd_play(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await _send_card(user_id, context)
 
 
+async def cmd_play(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    assert update.effective_user
+    await _start_session(update.effective_user.id, context)
+
+
 async def _stats_text(user_id: int) -> str:
     session = _session(user_id)
     correct = session.get("session_correct", 0)
     total = session.get("session_total", 0)
     all_stats = await db.get_all_stats(user_id)
+    user = await db.get_user(user_id)
 
     mastered = sum(1 for _, _, h in all_stats if quiz.is_mastered(h))
     words_seen = len({word_ro for word_ro, _, _ in all_stats})
@@ -163,7 +192,11 @@ async def _stats_text(user_id: int) -> str:
         lines.append("*This session:* Not started yet")
     lines.append(f"*Words seen (all time):* {words_seen}")
     lines.append(f"*Mastered words:* {mastered} 🏆")
-    lines.append(f"*Total in deck:* {len(verbs)}")
+    lines.append(f"*Total in deck:* {len(_deck(session))}")
+    lines.append(f"*Level:* {LEVEL_LABELS.get(user['level'], user['level'])}")
+    lines.append(f"*Points:* {user['points']} ⭐")
+    if user["streak"] > 1:
+        lines.append(f"*Streak:* {user['streak']} days 🔥")
     return "\n".join(lines)
 
 
@@ -207,12 +240,43 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 
     # ── Menu actions ─────────────────────────────────────────────
     if data == "menu:play":
-        session = _session(user_id)
-        session["playing"] = True
-        session["session_correct"] = 0
-        session["session_total"] = 0
         await query.edit_message_reply_markup(reply_markup=None)
-        await _send_card(user_id, context)
+        await _start_session(user_id, context)
+        return
+
+    if data == "menu:main":
+        await query.edit_message_text(
+            "What would you like to do?",
+            reply_markup=_main_menu(),
+        )
+        return
+
+    if data == "menu:level":
+        session = _session(user_id)
+        await query.edit_message_text(
+            f"🎯 *Level:* {LEVEL_LABELS.get(session['level'], session['level'])}\n\n"
+            "Pick how many of the most common verbs to practise. "
+            "Takes effect on the next session.",
+            reply_markup=_level_menu(),
+            parse_mode="Markdown",
+        )
+        return
+
+    if data.startswith("level:"):
+        try:
+            level = int(data.split(":")[1])
+        except ValueError:
+            return
+        if level not in LEVEL_LABELS:
+            return
+        await db.set_level(user_id, level)
+        session = _session(user_id)
+        session["level"] = level
+        await query.edit_message_text(
+            f"✅ Level set to *{LEVEL_LABELS[level]}*.\n\nWhat would you like to do?",
+            reply_markup=_main_menu(),
+            parse_mode="Markdown",
+        )
         return
 
     if data == "menu:stats":
@@ -285,14 +349,28 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     await query.edit_message_text(result, parse_mode="Markdown", reply_markup=None)
 
     if session["session_total"] >= SESSION_SIZE:
-        await _send_summary_and_menu(
-            user_id, context, f"Session complete! 🎉"
-        )
+        session["playing"] = False
+        award, streak = await db.finish_session(user_id, date.today())
+        user = await db.get_user(user_id)
+        header = "Session complete! 🎉"
+        header += f"\n⭐ +{award} points ({user['points']} total)"
+        if streak > 1:
+            header += f"\n🔥 {streak}-day streak"
+        await _send_summary_and_menu(user_id, context, header)
     else:
         await _send_card(user_id, context)
 
 
 # ── App lifecycle ─────────────────────────────────────────────────────────────
+
+async def on_update(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Runs for every update: records activity, refreshes the cached level."""
+    user = update.effective_user
+    if user is None:
+        return
+    await db.touch_user(user.id, user.full_name, user.username)
+    _session(user.id)["level"] = (await db.get_user(user.id))["level"]
+
 
 async def post_init(application: Application) -> None:
     global verbs
@@ -309,6 +387,7 @@ def main() -> None:
         .build()
     )
 
+    app.add_handler(TypeHandler(Update, on_update), group=-1)
     app.add_handler(CommandHandler("start", cmd_start))
     app.add_handler(CommandHandler("play", cmd_play))
     app.add_handler(CommandHandler("stats", cmd_stats))
