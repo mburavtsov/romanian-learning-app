@@ -55,6 +55,17 @@ def clean_gloss(gloss: str) -> str:
     return gloss.strip(" .,;:")
 
 
+def third_person(entry: dict) -> str | None:
+    """3rd person singular present — the form only a verb has (not the noun homograph)."""
+    for form in entry.get("forms", []):
+        tags = set(form.get("tags") or [])
+        if {"present", "singular", "third-person"} <= tags and "subjunctive" not in tags:
+            candidate = (form.get("form") or "").strip()
+            if candidate and " " not in candidate:
+                return candidate
+    return None
+
+
 def extract_verbs(gz_path: Path) -> list[dict]:
     verbs = []
     seen_ro = set()
@@ -70,6 +81,10 @@ def extract_verbs(gz_path: Path) -> list[dict]:
             if entry.get("pos") != "verb":
                 continue
             if entry.get("lang") != "Romanian":
+                continue
+
+            # Inflected forms are separate entries ("dau", "știe"); skip them.
+            if any(sense.get("form_of") for sense in entry.get("senses", [])):
                 continue
 
             word_ro = entry.get("word", "").strip()
@@ -111,7 +126,9 @@ def extract_verbs(gz_path: Path) -> list[dict]:
             ro_display = word_ro if word_ro.startswith("a ") else f"a {word_ro}"
 
             seen_ro.add(word_ro)
-            verbs.append({"ro": ro_display, "en": en_gloss, "_base": word_ro})
+            verbs.append(
+                {"ro": ro_display, "en": en_gloss, "_base": word_ro, "_third": third_person(entry)}
+            )
 
     log.info("Found %d unique verbs with English glosses.", len(verbs))
     return verbs
@@ -120,8 +137,9 @@ def extract_verbs(gz_path: Path) -> list[dict]:
 def rank_and_trim(verbs: list[dict], top_n: int) -> list[dict]:
     log.info("Ranking by frequency …")
     for v in verbs:
-        # Use the base form (without 'a ') for frequency lookup
-        v["_freq"] = word_frequency(v["_base"], "ro")
+        # Rank on the 3rd person present ("face", "casează"), not the base form:
+        # "casa" and "război" are common as nouns and would rank as if they were verbs.
+        v["_freq"] = word_frequency(v["_third"] or v["_base"], "ro")
 
     verbs.sort(key=lambda v: v["_freq"], reverse=True)
 

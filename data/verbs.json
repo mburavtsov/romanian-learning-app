@@ -4,60 +4,56 @@
     "en": "to be"
   },
   {
-    "ro": "a face",
-    "en": "to do, act"
-  },
-  {
-    "ro": "a avea",
-    "en": "to have"
+    "ro": "a voi",
+    "en": "will"
   },
   {
     "ro": "a putea",
     "en": "to be able to"
   },
   {
-    "ro": "a prima",
-    "en": "to prevail, to take precedent"
-  },
-  {
-    "ro": "a spune",
-    "en": "to say"
-  },
-  {
-    "ro": "a voi",
-    "en": "will"
-  },
-  {
-    "ro": "a da",
-    "en": "to give"
+    "ro": "a avea",
+    "en": "to have"
   },
   {
     "ro": "a trebui",
     "en": "to be necessary, to need to, to have to"
   },
   {
-    "ro": "a data",
-    "en": "to date"
+    "ro": "a face",
+    "en": "to do, act"
   },
   {
-    "ro": "a casa",
-    "en": "to annul a court decision"
+    "ro": "a spune",
+    "en": "to say"
   },
   {
-    "ro": "a urma",
-    "en": "to follow"
+    "ro": "a exista",
+    "en": "to exist"
   },
   {
-    "ro": "a cauza",
-    "en": "to cause"
+    "ro": "a părea",
+    "en": "to look"
+  },
+  {
+    "ro": "a afla",
+    "en": "to find out, get wind of"
   },
   {
     "ro": "a duce",
     "en": "to carry, lead, take"
   },
   {
-    "ro": "a baza",
-    "en": "to be based on"
+    "ro": "a arăta",
+    "en": "to show"
+  },
+  {
+    "ro": "a însemna",
+    "en": "to mean, signify, imply, indicate"
+  },
+  {
+    "ro": "a veni",
+    "en": "to come"
   },
   {
     "ro": "a vrea",
@@ -68,64 +64,52 @@
     "en": "to put"
   },
   {
-    "ro": "a români",
-    "en": "to Romanianize"
+    "ro": "a reprezenta",
+    "en": "to represent"
   },
   {
-    "ro": "a vedea",
-    "en": "to see"
+    "ro": "a lua",
+    "en": "to take"
   },
   {
     "ro": "a ajunge",
     "en": "to overtake, to catch up"
   },
   {
-    "ro": "a echipa",
-    "en": "to equip"
-  },
-  {
     "ro": "a începe",
     "en": "to begin, to commence"
+  },
+  {
+    "ro": "a ști",
+    "en": "to know"
+  },
+  {
+    "ro": "a da",
+    "en": "to give"
   },
   {
     "ro": "a rămâne",
     "en": "to remain, be left, stay behind"
   },
   {
-    "ro": "a ajuta",
-    "en": "to help"
+    "ro": "a plăcea",
+    "en": "to please"
   },
   {
     "ro": "a aduce",
     "en": "to bring"
   },
   {
-    "ro": "a război",
-    "en": "to fight a war, to battle"
-  },
-  {
-    "ro": "a forma",
-    "en": "to form, to create, to make"
-  },
-  {
     "ro": "a merge",
     "en": "to walk"
   },
   {
-    "ro": "a afla",
-    "en": "to find out, get wind of"
+    "ro": "a lupta",
+    "en": "to battle"
   },
   {
-    "ro": "a republica",
-    "en": "to republish"
-  },
-  {
-    "ro": "a ului",
-    "en": "to amaze, to astound, to bewilder"
-  },
-  {
-    "ro": "a lista",
-    "en": "to put on a list"
+    "ro": "a ajuta",
+    "en": "to help"
   },
   {
     "ro": "a trece",
@@ -136,64 +120,76 @@
     "en": "to write"
   },
   {
-    "ro": "a maria",
-    "en": "to marry"
+    "ro": "a apărea",
+    "en": "to appear, show up, turn up, emerge"
   },
   {
-    "ro": "a găsi",
-    "en": "to find"
+    "ro": "a deveni",
+    "en": "to become"
   },
   {
-    "ro": "a exista",
-    "en": "to exist"
-  },
-  {
-    "ro": "a lua",
-    "en": "to take"
+    "ro": "a întâmpla",
+    "en": "to happen, occur"
   },
   {
     "ro": "a ține",
     "en": "to hold"
   },
   {
-    "ro": "a cere",
-    "en": "to request, to ask for"
+    "ro": "a prezenta",
+    "en": "to present"
   },
   {
-    "ro": "a mașina",
-    "en": "to machinate"
+    "ro": "a privi",
+    "en": "to look, gaze, regard, watch, behold"
+  },
+  {
+    "ro": "a publica",
+    "en": "to publish"
+  },
+  {
+    "ro": "a lăsa",
+    "en": "to leave"
+  },
+  {
+    "ro": "a continua",
+    "en": "to continue"
+  },
+  {
+    "ro": "a cere",
+    "en": "to request, to ask for"
   },
   {
     "ro": "a conține",
     "en": "to contain"
   },
   {
-    "ro": "a media",
-    "en": "to mediate"
-  },
-  {
     "ro": "a permite",
     "en": "to permit, allow"
   },
   {
-    "ro": "a clasa",
-    "en": "to classify"
+    "ro": "a oferi",
+    "en": "to offer"
   },
   {
-    "ro": "a lupta",
-    "en": "to battle"
+    "ro": "a încerca",
+    "en": "to try, to attempt"
+  },
+  {
+    "ro": "a purta",
+    "en": "to carry, bear"
+  },
+  {
+    "ro": "a căuta",
+    "en": "to search"
+  },
+  {
+    "ro": "a considera",
+    "en": "to consider"
   },
   {
     "ro": "a mâna",
     "en": "to drive, goad, put into action"
-  },
-  {
-    "ro": "a lumina",
-    "en": "to light, to illuminate"
-  },
-  {
-    "ro": "a folosi",
-    "en": "to use, employ"
   },
   {
     "ro": "a include",
@@ -212,52 +208,68 @@
     "en": "to enter, go in"
   },
   {
+    "ro": "a aștepta",
+    "en": "to wait"
+  },
+  {
     "ro": "a obține",
     "en": "to obtain"
   },
   {
-    "ro": "a primi",
-    "en": "to receive, to get"
+    "ro": "a urma",
+    "en": "to follow"
   },
   {
-    "ro": "a continua",
-    "en": "to continue"
+    "ro": "a vedea",
+    "en": "to see"
   },
   {
-    "ro": "a ochi",
-    "en": "to aim, take aim"
+    "ro": "a lucra",
+    "en": "to work"
   },
   {
-    "ro": "a masa",
-    "en": "to massage"
+    "ro": "a juca",
+    "en": "to play"
   },
   {
-    "ro": "a simți",
-    "en": "to feel"
+    "ro": "a minți",
+    "en": "to lie"
   },
   {
-    "ro": "a veni",
-    "en": "to come"
+    "ro": "a funcționa",
+    "en": "to function"
   },
   {
     "ro": "a înțelege",
     "en": "to understand"
   },
   {
+    "ro": "a găsi",
+    "en": "to find"
+  },
+  {
+    "ro": "a sta",
+    "en": "to stay"
+  },
+  {
+    "ro": "a vorbi",
+    "en": "to speak"
+  },
+  {
     "ro": "a deschide",
     "en": "to open"
   },
   {
-    "ro": "a deveni",
-    "en": "to become"
-  },
-  {
-    "ro": "a rezultate",
-    "en": "feminine genitive/dative indefinite singular"
+    "ro": "a făta",
+    "en": "to give birth to, foal, litter, yean, calve, whelp, farrow, pup"
   },
   {
     "ro": "a cuprinde",
     "en": "to comprehend"
+  },
+  {
+    "ro": "a constitui",
+    "en": "to constitute"
   },
   {
     "ro": "a produce",
@@ -272,32 +284,24 @@
     "en": "don't"
   },
   {
-    "ro": "a seria",
-    "en": "to seriate"
-  },
-  {
     "ro": "a susține",
     "en": "to support"
   },
   {
-    "ro": "a pagina",
-    "en": "to paginate"
-  },
-  {
-    "ro": "a schimba",
-    "en": "to modify, to alter"
+    "ro": "a merita",
+    "en": "to deserve, to merit"
   },
   {
     "ro": "a alege",
     "en": "to choose, to select"
   },
   {
-    "ro": "a însuși",
-    "en": "to appropriate"
-  },
-  {
     "ro": "a or",
     "en": "might"
+  },
+  {
+    "ro": "a folosi",
+    "en": "to use, employ"
   },
   {
     "ro": "a trimite",
@@ -308,32 +312,20 @@
     "en": "to lose"
   },
   {
-    "ro": "a părea",
-    "en": "to look"
-  },
-  {
-    "ro": "a dori",
-    "en": "to want, to wish"
+    "ro": "a ocupa",
+    "en": "to occupy, take up"
   },
   {
     "ro": "a răspunde",
     "en": "to respond, reply, answer"
   },
   {
-    "ro": "a adresa",
-    "en": "to address"
+    "ro": "a numi",
+    "en": "to name"
   },
   {
-    "ro": "a oferi",
-    "en": "to offer"
-  },
-  {
-    "ro": "a linia",
-    "en": "to line"
-  },
-  {
-    "ro": "a încerca",
-    "en": "to try, to attempt"
+    "ro": "a ridica",
+    "en": "to lift, elevate, raise, hoist, suspend"
   },
   {
     "ro": "a crește",
@@ -352,72 +344,48 @@
     "en": "to own"
   },
   {
-    "ro": "a școli",
-    "en": "to school"
-  },
-  {
-    "ro": "a sta",
-    "en": "to stay"
-  },
-  {
-    "ro": "a juca",
-    "en": "to play"
-  },
-  {
-    "ro": "a comanda",
-    "en": "to order, command, lead"
-  },
-  {
-    "ro": "a arăta",
-    "en": "to show"
+    "ro": "a conta",
+    "en": "to count"
   },
   {
     "ro": "a cunoaște",
     "en": "to know"
   },
   {
-    "ro": "a structura",
-    "en": "to structure"
+    "ro": "a afirma",
+    "en": "to affirm"
   },
   {
-    "ro": "a opera",
-    "en": "to operate"
+    "ro": "a practica",
+    "en": "to practise"
   },
   {
-    "ro": "a vorbi",
-    "en": "to speak"
+    "ro": "a schimba",
+    "en": "to modify, to alter"
   },
   {
-    "ro": "a suprafața",
-    "en": "to cover the surface with something"
+    "ro": "a participa",
+    "en": "to participate"
   },
   {
     "ro": "a întoarce",
     "en": "to return, come back"
   },
   {
-    "ro": "a boli",
-    "en": "to ail"
+    "ro": "a primi",
+    "en": "to receive, to get"
   },
   {
-    "ro": "a forța",
-    "en": "to force"
+    "ro": "a simți",
+    "en": "to feel"
   },
   {
-    "ro": "a lungi",
-    "en": "to lengthen, elongate, extend"
-  },
-  {
-    "ro": "a întâmpla",
-    "en": "to happen, occur"
+    "ro": "a realiza",
+    "en": "to achieve"
   },
   {
     "ro": "a atinge",
     "en": "to touch"
-  },
-  {
-    "ro": "a lăsa",
-    "en": "to leave"
   },
   {
     "ro": "a presupune",
@@ -428,124 +396,132 @@
     "en": "to belong, to be part of, to pertain"
   },
   {
-    "ro": "a uita",
-    "en": "to forget"
+    "ro": "a număra",
+    "en": "to count"
   },
   {
-    "ro": "a influența",
-    "en": "to influence"
-  },
-  {
-    "ro": "a lucra",
-    "en": "to work"
-  },
-  {
-    "ro": "a ieși",
-    "en": "to exit, to get out"
+    "ro": "a consta",
+    "en": "to consist"
   },
   {
     "ro": "a invitat",
     "en": "invited"
   },
   {
-    "ro": "a grea",
-    "en": "to rig"
+    "ro": "a pleca",
+    "en": "to leave, depart"
+  },
+  {
+    "ro": "a desfășura",
+    "en": "to unfold, unfurl, unwrap, open up"
+  },
+  {
+    "ro": "a apropia",
+    "en": "to bring near"
   },
   {
     "ro": "a teme",
     "en": "to fear"
   },
   {
-    "ro": "a limita",
-    "en": "to limit"
-  },
-  {
     "ro": "a trăi",
     "en": "to live, to exist"
   },
   {
-    "ro": "a politici",
-    "en": "to govern"
+    "ro": "a termina",
+    "en": "to finish, complete"
   },
   {
     "ro": "a petrece",
     "en": "to party"
   },
   {
-    "ro": "a analiza",
-    "en": "to analyze"
+    "ro": "a păstra",
+    "en": "to keep, preserve, hold, maintain"
   },
   {
-    "ro": "a asigura",
-    "en": "to assure"
+    "ro": "a muri",
+    "en": "to die"
   },
   {
-    "ro": "a câștiga",
-    "en": "to win"
+    "ro": "a dori",
+    "en": "to want, to wish"
   },
   {
-    "ro": "a suma",
-    "en": "to sum up"
+    "ro": "a ieși",
+    "en": "to exit, to get out"
   },
   {
-    "ro": "a crea",
-    "en": "to create"
+    "ro": "a pregăti",
+    "en": "to prepare"
   },
   {
-    "ro": "a purta",
-    "en": "to carry, bear"
+    "ro": "a comanda",
+    "en": "to order, command, lead"
   },
   {
-    "ro": "a presa",
-    "en": "to press"
+    "ro": "a uita",
+    "en": "to forget"
+  },
+  {
+    "ro": "a implica",
+    "en": "to imply"
+  },
+  {
+    "ro": "a utiliza",
+    "en": "to use"
+  },
+  {
+    "ro": "a întâlni",
+    "en": "to meet"
   },
   {
     "ro": "a trage",
     "en": "to pull, draw, drag"
   },
   {
-    "ro": "a formula",
-    "en": "to formulate"
+    "ro": "a costa",
+    "en": "to cost"
   },
   {
-    "ro": "a referi",
-    "en": "to refer to something"
+    "ro": "a baza",
+    "en": "to be based on"
   },
   {
-    "ro": "a ocupa",
-    "en": "to occupy, take up"
+    "ro": "a forma",
+    "en": "to form, to create, to make"
   },
   {
-    "ro": "a învăța",
-    "en": "to learn"
+    "ro": "a critica",
+    "en": "to criticize"
   },
   {
     "ro": "a bate",
     "en": "to beat"
   },
   {
-    "ro": "a reuși",
-    "en": "to succeed in doing something, manage"
+    "ro": "a necesita",
+    "en": "to necessitate"
   },
   {
-    "ro": "a întregi",
-    "en": "to complete, to make whole"
+    "ro": "a rezerva",
+    "en": "to reserve"
   },
   {
-    "ro": "a ridica",
-    "en": "to lift, elevate, raise, hoist, suspend"
+    "ro": "a suna",
+    "en": "to ring or produce a sound in general"
   },
   {
-    "ro": "a aștepta",
-    "en": "to wait"
+    "ro": "a tăia",
+    "en": "to cut"
   },
   {
-    "ro": "a auzi",
-    "en": "to hear"
+    "ro": "a urmări",
+    "en": "to watch"
   },
   {
-    "ro": "a cumpăra",
-    "en": "to buy, purchase"
+    "ro": "a indica",
+    "en": "to indicate"
   },
   {
     "ro": "a descrie",
@@ -556,292 +532,296 @@
     "en": "to sell"
   },
   {
-    "ro": "a pleca",
-    "en": "to leave, depart"
+    "ro": "a asigura",
+    "en": "to assure"
   },
   {
-    "ro": "a discuta",
-    "en": "to discuss"
-  },
-  {
-    "ro": "a bea",
-    "en": "to drink"
-  },
-  {
-    "ro": "a citi",
-    "en": "to read"
-  },
-  {
-    "ro": "a considera",
-    "en": "to consider"
-  },
-  {
-    "ro": "a ascunde",
-    "en": "to hide, to conceal"
-  },
-  {
-    "ro": "a întâlni",
-    "en": "to meet"
-  },
-  {
-    "ro": "a reprezenta",
-    "en": "to represent"
-  },
-  {
-    "ro": "a plăti",
-    "en": "to pay"
-  },
-  {
-    "ro": "a păstra",
-    "en": "to keep, preserve, hold, maintain"
-  },
-  {
-    "ro": "a decide",
-    "en": "to decide"
-  },
-  {
-    "ro": "a oferta",
-    "en": "to offer"
-  },
-  {
-    "ro": "a ști",
-    "en": "to know"
-  },
-  {
-    "ro": "a căuta",
-    "en": "to search"
-  },
-  {
-    "ro": "a reveni",
-    "en": "to return, come back"
-  },
-  {
-    "ro": "a grupa",
-    "en": "to group"
-  },
-  {
-    "ro": "a opri",
-    "en": "to stop one’s own movement"
-  },
-  {
-    "ro": "a recunoaște",
-    "en": "to recognize"
-  },
-  {
-    "ro": "a rezolva",
-    "en": "to resolve"
-  },
-  {
-    "ro": "a prinde",
-    "en": "to catch"
-  },
-  {
-    "ro": "a apărea",
-    "en": "to appear, show up, turn up, emerge"
-  },
-  {
-    "ro": "a proteja",
-    "en": "to protect"
-  },
-  {
-    "ro": "a marca",
-    "en": "to mark"
-  },
-  {
-    "ro": "a fabrica",
-    "en": "to fabricate, invent"
-  },
-  {
-    "ro": "a salva",
-    "en": "to save"
-  },
-  {
-    "ro": "a transmite",
-    "en": "to transmit, transfer, convey"
-  },
-  {
-    "ro": "a verifica",
-    "en": "to verify, to check"
-  },
-  {
-    "ro": "a prezenta",
-    "en": "to present"
-  },
-  {
-    "ro": "a costa",
-    "en": "to cost"
-  },
-  {
-    "ro": "a dispune",
-    "en": "to arrange, order, place"
-  },
-  {
-    "ro": "a preoți",
-    "en": "to be ordained"
-  },
-  {
-    "ro": "a interzis",
-    "en": "forbidden"
-  },
-  {
-    "ro": "a bucăți",
-    "en": "to divide in pieces"
-  },
-  {
-    "ro": "a reduce",
-    "en": "to reduce, to lessen"
-  },
-  {
-    "ro": "a plăcea",
-    "en": "to please"
-  },
-  {
-    "ro": "a însemna",
-    "en": "to mean, signify, imply, indicate"
-  },
-  {
-    "ro": "a rata",
-    "en": "to miss, to fail"
-  },
-  {
-    "ro": "a evita",
-    "en": "to avoid"
-  },
-  {
-    "ro": "a scăpa",
-    "en": "to drop"
-  },
-  {
-    "ro": "a vizita",
-    "en": "to visit"
-  },
-  {
-    "ro": "a transforma",
-    "en": "to transform"
-  },
-  {
-    "ro": "a practica",
-    "en": "to practise"
-  },
-  {
-    "ro": "a urmări",
-    "en": "to watch"
-  },
-  {
-    "ro": "a accepta",
-    "en": "to accept"
-  },
-  {
-    "ro": "a realiza",
-    "en": "to achieve"
-  },
-  {
-    "ro": "a explica",
-    "en": "to explain"
-  },
-  {
-    "ro": "a participa",
-    "en": "to participate"
-  },
-  {
-    "ro": "a proba",
-    "en": "to prove, demonstrate"
-  },
-  {
-    "ro": "a întinde",
-    "en": "to stretch, lengthen"
-  },
-  {
-    "ro": "a măsura",
-    "en": "to measure"
-  },
-  {
-    "ro": "a nota",
-    "en": "to make a note of, note down in writing"
-  },
-  {
-    "ro": "a închide",
-    "en": "to close"
-  },
-  {
-    "ro": "a menține",
-    "en": "to maintain, hold out, keep up"
-  },
-  {
-    "ro": "a griji",
-    "en": "to take care"
-  },
-  {
-    "ro": "a bucura",
-    "en": "to delight, to cheer, to indulge"
-  },
-  {
-    "ro": "a asculta",
-    "en": "to listen"
-  },
-  {
-    "ro": "a umple",
-    "en": "to fill, fill up"
-  },
-  {
-    "ro": "a distanța",
-    "en": "to distance"
-  },
-  {
-    "ro": "a căi",
-    "en": "to repent"
+    "ro": "a dezvolta",
+    "en": "to develop"
   },
   {
     "ro": "a dura",
     "en": "to build"
   },
   {
+    "ro": "a determina",
+    "en": "to determine"
+  },
+  {
+    "ro": "a bea",
+    "en": "to drink"
+  },
+  {
+    "ro": "a adăuga",
+    "en": "to add, add to"
+  },
+  {
+    "ro": "a reveni",
+    "en": "to return, come back"
+  },
+  {
+    "ro": "a ascunde",
+    "en": "to hide, to conceal"
+  },
+  {
+    "ro": "a încheia",
+    "en": "to conclude, end, wrap up, wind up, close"
+  },
+  {
+    "ro": "a reuși",
+    "en": "to succeed in doing something, manage"
+  },
+  {
+    "ro": "a câștiga",
+    "en": "to win"
+  },
+  {
+    "ro": "a interesa",
+    "en": "to interest"
+  },
+  {
+    "ro": "a sări",
+    "en": "to jump"
+  },
+  {
+    "ro": "a decide",
+    "en": "to decide"
+  },
+  {
+    "ro": "a acoperi",
+    "en": "to cover"
+  },
+  {
+    "ro": "a iubi",
+    "en": "to love"
+  },
+  {
+    "ro": "a întreba",
+    "en": "to ask"
+  },
+  {
+    "ro": "a recunoaște",
+    "en": "to recognize"
+  },
+  {
+    "ro": "a explica",
+    "en": "to explain"
+  },
+  {
+    "ro": "a rezulta",
+    "en": "to result, to follow, to ensue"
+  },
+  {
+    "ro": "a crea",
+    "en": "to create"
+  },
+  {
+    "ro": "a prinde",
+    "en": "to catch"
+  },
+  {
+    "ro": "a aminti",
+    "en": "to remind"
+  },
+  {
+    "ro": "a descoperi",
+    "en": "to uncover"
+  },
+  {
+    "ro": "a citi",
+    "en": "to read"
+  },
+  {
+    "ro": "a specifica",
+    "en": "to specify"
+  },
+  {
+    "ro": "a cânta",
+    "en": "to sing"
+  },
+  {
+    "ro": "a transmite",
+    "en": "to transmit, transfer, convey"
+  },
+  {
+    "ro": "a dispune",
+    "en": "to arrange, order, place"
+  },
+  {
+    "ro": "a interzis",
+    "en": "forbidden"
+  },
+  {
+    "ro": "a învăța",
+    "en": "to learn"
+  },
+  {
+    "ro": "a reduce",
+    "en": "to reduce, to lessen"
+  },
+  {
+    "ro": "a lega",
+    "en": "to tie, bind, connect"
+  },
+  {
+    "ro": "a exprima",
+    "en": "to express"
+  },
+  {
+    "ro": "a chema",
+    "en": "to call"
+  },
+  {
+    "ro": "a datora",
+    "en": "to owe"
+  },
+  {
+    "ro": "a transforma",
+    "en": "to transform"
+  },
+  {
+    "ro": "a lipsi",
+    "en": "to deprive"
+  },
+  {
+    "ro": "a accepta",
+    "en": "to accept"
+  },
+  {
+    "ro": "a mânca",
+    "en": "to eat"
+  },
+  {
+    "ro": "a organiza",
+    "en": "to organise, to arrange"
+  },
+  {
+    "ro": "a menționa",
+    "en": "to mention"
+  },
+  {
+    "ro": "a auzi",
+    "en": "to hear"
+  },
+  {
+    "ro": "a asculta",
+    "en": "to listen"
+  },
+  {
+    "ro": "a arunca",
+    "en": "throw"
+  },
+  {
+    "ro": "a întinde",
+    "en": "to stretch, lengthen"
+  },
+  {
+    "ro": "a oua",
+    "en": "to lay eggs"
+  },
+  {
+    "ro": "a închide",
+    "en": "to close"
+  },
+  {
+    "ro": "a suferi",
+    "en": "to suffer"
+  },
+  {
+    "ro": "a acorda",
+    "en": "to grant, allow, give, accord, permit, confer, vouchsafe"
+  },
+  {
+    "ro": "a menține",
+    "en": "to maintain, hold out, keep up"
+  },
+  {
+    "ro": "a lansa",
+    "en": "to pitch"
+  },
+  {
+    "ro": "a observa",
+    "en": "to observe"
+  },
+  {
+    "ro": "a stabili",
+    "en": "to establish, determine, prove"
+  },
+  {
+    "ro": "a proveni",
+    "en": "to originate"
+  },
+  {
+    "ro": "a umple",
+    "en": "to fill, fill up"
+  },
+  {
+    "ro": "a refuza",
+    "en": "to refuse"
+  },
+  {
+    "ro": "a fuga",
+    "en": "to banish, expel, drive away, chase off"
+  },
+  {
+    "ro": "a gândi",
+    "en": "to think"
+  },
+  {
     "ro": "a distruge",
     "en": "to destroy"
+  },
+  {
+    "ro": "a manifesta",
+    "en": "to manifest"
   },
   {
     "ro": "a înscrie",
     "en": "to register"
   },
   {
-    "ro": "a regula",
-    "en": "to arrange, set in order, put in order"
+    "ro": "a aplica",
+    "en": "to apply"
+  },
+  {
+    "ro": "a cădea",
+    "en": "to fall"
   },
   {
     "ro": "a propune",
     "en": "to propose, suggest or recommend"
   },
   {
-    "ro": "a merita",
-    "en": "to deserve, to merit"
+    "ro": "a acționa",
+    "en": "to act"
   },
   {
-    "ro": "a sărbători",
-    "en": "to celebrate"
+    "ro": "a anunța",
+    "en": "to announce"
   },
   {
-    "ro": "a poza",
-    "en": "to pose"
+    "ro": "a locui",
+    "en": "to reside, to dwell"
   },
   {
-    "ro": "a cifra",
-    "en": "to quantify"
+    "ro": "a activa",
+    "en": "to activate"
   },
   {
-    "ro": "a funcționa",
-    "en": "to function"
+    "ro": "a semăna",
+    "en": "to resemble, look like"
   },
   {
-    "ro": "a preda",
-    "en": "to hand over, to give in custody an object"
+    "ro": "a cumpăra",
+    "en": "to buy, purchase"
   },
   {
-    "ro": "a călători",
-    "en": "to travel, to journey"
+    "ro": "a potrivi",
+    "en": "to arrange"
   },
   {
-    "ro": "a gândi",
-    "en": "to think"
+    "ro": "a contribui",
+    "en": "to contribute"
   },
   {
     "ro": "a ucide",
@@ -852,76 +832,80 @@
     "en": "to attract, draw, lure, entice, bring"
   },
   {
-    "ro": "a determina",
-    "en": "to determine"
+    "ro": "a bucura",
+    "en": "to delight, to cheer, to indulge"
   },
   {
-    "ro": "a descoperi",
-    "en": "to uncover"
+    "ro": "a aduna",
+    "en": "to gather, to collect"
   },
   {
-    "ro": "a mânca",
-    "en": "to eat"
+    "ro": "a declara",
+    "en": "to declare"
   },
   {
-    "ro": "a reforma",
-    "en": "to reform"
+    "ro": "a opri",
+    "en": "to stop one’s own movement"
   },
   {
-    "ro": "a afirma",
-    "en": "to affirm"
+    "ro": "a reflecta",
+    "en": "to reflect"
   },
   {
-    "ro": "a litera",
-    "en": "to letter"
+    "ro": "a sugera",
+    "en": "to suggest"
   },
   {
-    "ro": "a fotografia",
-    "en": "to photograph"
+    "ro": "a fabrica",
+    "en": "to fabricate, invent"
   },
   {
-    "ro": "a controla",
-    "en": "to control, to master"
+    "ro": "a secreta",
+    "en": "to secrete"
   },
   {
-    "ro": "a numi",
-    "en": "to name"
+    "ro": "a provoca",
+    "en": "to provoke"
   },
   {
-    "ro": "a urca",
-    "en": "to climb, ascend, go up, rise"
+    "ro": "a dezvălui",
+    "en": "to disclose, to expose, to unveil"
+  },
+  {
+    "ro": "a porni",
+    "en": "to start"
+  },
+  {
+    "ro": "a durea",
+    "en": "to hurt, ache"
+  },
+  {
+    "ro": "a păsa",
+    "en": "to care"
+  },
+  {
+    "ro": "a plăti",
+    "en": "to pay"
   },
   {
     "ro": "a extinde",
     "en": "to extend"
   },
   {
-    "ro": "a muri",
-    "en": "to die"
+    "ro": "a efectua",
+    "en": "to carry out, to fulfill"
   },
   {
-    "ro": "a privi",
-    "en": "to look, gaze, regard, watch, behold"
+    "ro": "a marca",
+    "en": "to mark"
   },
   {
-    "ro": "a sfinți",
-    "en": "to sanctify"
+    "ro": "a muta",
+    "en": "to move, shift"
   },
   {
-    "ro": "a stabili",
-    "en": "to establish, determine, prove"
-  },
-  {
-    "ro": "a albi",
-    "en": "to whiten"
-  },
-  {
-    "ro": "a suferi",
-    "en": "to suffer"
-  },
-  {
-    "ro": "a promova",
-    "en": "to promote"
+    "ro": "a dovedi",
+    "en": "to prove, to demonstrate"
   },
   {
     "ro": "a retrage",
@@ -932,76 +916,44 @@
     "en": "to insert"
   },
   {
-    "ro": "a construi",
-    "en": "to construct, build"
+    "ro": "a ruga",
+    "en": "to ask politely, to say please"
   },
   {
-    "ro": "a corespunde",
-    "en": "to correspond"
-  },
-  {
-    "ro": "a suna",
-    "en": "to ring or produce a sound in general"
-  },
-  {
-    "ro": "a acoperi",
-    "en": "to cover"
-  },
-  {
-    "ro": "a cânta",
-    "en": "to sing"
-  },
-  {
-    "ro": "a întreba",
-    "en": "to ask"
+    "ro": "a scăpa",
+    "en": "to drop"
   },
   {
     "ro": "a impune",
     "en": "to enforce"
   },
   {
-    "ro": "a gara",
-    "en": "to garage"
-  },
-  {
     "ro": "a convinge",
     "en": "to convince, to persuade"
   },
   {
-    "ro": "a flota",
-    "en": "to float"
+    "ro": "a ataca",
+    "en": "to attack"
+  },
+  {
+    "ro": "a mișca",
+    "en": "to move"
+  },
+  {
+    "ro": "a afecta",
+    "en": "to affect"
   },
   {
     "ro": "a promite",
     "en": "to promise"
   },
   {
-    "ro": "a renunța",
-    "en": "to give up"
+    "ro": "a îndrepta",
+    "en": "to straighten"
   },
   {
-    "ro": "a via",
-    "en": "to have life"
-  },
-  {
-    "ro": "a negri",
-    "en": "to blacken"
-  },
-  {
-    "ro": "a figura",
-    "en": "to appear"
-  },
-  {
-    "ro": "a termina",
-    "en": "to finish, complete"
-  },
-  {
-    "ro": "a observa",
-    "en": "to observe"
-  },
-  {
-    "ro": "a placa",
-    "en": "to plate"
+    "ro": "a înregistra",
+    "en": "to register"
   },
   {
     "ro": "a plânge",
@@ -1012,88 +964,80 @@
     "en": "to give birth to"
   },
   {
-    "ro": "a dovedi",
-    "en": "to prove, to demonstrate"
+    "ro": "a prefera",
+    "en": "to prefer"
   },
   {
-    "ro": "a masca",
-    "en": "to mask, to hide"
+    "ro": "a dispărea",
+    "en": "to disappear, vanish"
   },
   {
-    "ro": "a ruga",
-    "en": "to ask politely, to say please"
+    "ro": "a concentra",
+    "en": "to focus"
   },
   {
-    "ro": "a servi",
-    "en": "to serve"
+    "ro": "a renunța",
+    "en": "to give up"
   },
   {
-    "ro": "a păduri",
-    "en": "to cut wood from the forest"
+    "ro": "a remarca",
+    "en": "to remark"
   },
   {
     "ro": "a oi",
     "en": "might"
   },
   {
-    "ro": "a iubi",
-    "en": "to love"
-  },
-  {
     "ro": "a arde",
     "en": "to burn"
-  },
-  {
-    "ro": "a critica",
-    "en": "to criticize"
   },
   {
     "ro": "a surprinde",
     "en": "to surprise"
   },
   {
-    "ro": "a ancheta",
-    "en": "to investigate"
+    "ro": "a urca",
+    "en": "to climb, ascend, go up, rise"
   },
   {
-    "ro": "a marina",
-    "en": "to marinate"
+    "ro": "a tăbărî",
+    "en": "to swoop down on"
+  },
+  {
+    "ro": "a cure",
+    "en": "to run"
+  },
+  {
+    "ro": "a verifica",
+    "en": "to verify, to check"
+  },
+  {
+    "ro": "a varia",
+    "en": "to vary, to differ"
   },
   {
     "ro": "a curge",
     "en": "to flow, run"
   },
   {
-    "ro": "a axa",
-    "en": "to align on an axis"
-  },
-  {
-    "ro": "a apăra",
-    "en": "to protect, defend, guard"
-  },
-  {
     "ro": "a șterge",
     "en": "to wipe, clean, clear"
   },
   {
-    "ro": "a feluri",
-    "en": "to differentiate"
+    "ro": "a depăși",
+    "en": "to pass, surpass, overtake, excel, exceed"
   },
   {
-    "ro": "a arunca",
-    "en": "throw"
+    "ro": "a proteja",
+    "en": "to protect"
   },
   {
-    "ro": "a dezvolta",
-    "en": "to develop"
+    "ro": "a servi",
+    "en": "to serve"
   },
   {
-    "ro": "a orchestra",
-    "en": "to orchestrate"
-  },
-  {
-    "ro": "a ura",
-    "en": "to wish, bid"
+    "ro": "a recomanda",
+    "en": "to recommend"
   },
   {
     "ro": "a rupe",
@@ -1104,68 +1048,100 @@
     "en": "to win"
   },
   {
-    "ro": "a cădea",
-    "en": "to fall"
+    "ro": "a caracteriza",
+    "en": "to characterize"
   },
   {
-    "ro": "a povesti",
-    "en": "to tell a story"
+    "ro": "a coborî",
+    "en": "to descend, dismount, alight"
   },
   {
-    "ro": "a preveni",
-    "en": "to warn"
+    "ro": "a diferi",
+    "en": "to differ"
   },
   {
-    "ro": "a provoca",
-    "en": "to provoke"
+    "ro": "a controla",
+    "en": "to control, to master"
   },
   {
-    "ro": "a alina",
-    "en": "to allay, ease, alleviate, assuage"
+    "ro": "a estima",
+    "en": "to estimate"
+  },
+  {
+    "ro": "a demonstra",
+    "en": "to prove"
+  },
+  {
+    "ro": "a confrunta",
+    "en": "to confront"
+  },
+  {
+    "ro": "a opera",
+    "en": "to operate"
+  },
+  {
+    "ro": "a sprijini",
+    "en": "to support, sustain, bear, succor"
+  },
+  {
+    "ro": "a elibera",
+    "en": "to free, set free, release"
+  },
+  {
+    "ro": "a data",
+    "en": "to date"
+  },
+  {
+    "ro": "a relata",
+    "en": "to tell"
+  },
+  {
+    "ro": "a salva",
+    "en": "to save"
   },
   {
     "ro": "a trata",
     "en": "to treat"
   },
   {
-    "ro": "a împiedica",
-    "en": "to hinder"
+    "ro": "a povesti",
+    "en": "to tell a story"
   },
   {
-    "ro": "a refuza",
-    "en": "to refuse"
+    "ro": "a promova",
+    "en": "to promote"
   },
   {
-    "ro": "a mina",
-    "en": "to mine"
-  },
-  {
-    "ro": "a dormi",
-    "en": "to sleep"
-  },
-  {
-    "ro": "a rezista",
-    "en": "to resist"
+    "ro": "a cuveni",
+    "en": "to be adequate, to be consistent with"
   },
   {
     "ro": "a depune",
     "en": "to deposit"
   },
   {
-    "ro": "a plasa",
-    "en": "to place"
+    "ro": "a construi",
+    "en": "to construct, build"
   },
   {
-    "ro": "a arma",
-    "en": "to prepare a weapon for firing"
+    "ro": "a repeta",
+    "en": "to repeat"
   },
   {
-    "ro": "a utiliza",
-    "en": "to use"
+    "ro": "a atesta",
+    "en": "to attest"
   },
   {
-    "ro": "a celebra",
-    "en": "to celebrate, solemnize"
+    "ro": "a răza",
+    "en": "to radiate"
+  },
+  {
+    "ro": "a abstractiza",
+    "en": "to abstract"
+  },
+  {
+    "ro": "a atașa",
+    "en": "to attach"
   },
   {
     "ro": "a emite",
@@ -1176,156 +1152,148 @@
     "en": "to tighten, squeeze"
   },
   {
-    "ro": "a cina",
-    "en": "to dine, sup, have dinner"
+    "ro": "a executa",
+    "en": "to execute"
   },
   {
-    "ro": "a muta",
-    "en": "to move, shift"
-  },
-  {
-    "ro": "a porni",
-    "en": "to start"
-  },
-  {
-    "ro": "a declara",
-    "en": "to declare"
-  },
-  {
-    "ro": "a efectua",
-    "en": "to carry out, to fulfill"
-  },
-  {
-    "ro": "a diploma",
-    "en": "to graduate"
-  },
-  {
-    "ro": "a răni",
-    "en": "to hurt"
-  },
-  {
-    "ro": "a ataca",
-    "en": "to attack"
-  },
-  {
-    "ro": "a mări",
-    "en": "to enlarge, make bigger, greater"
-  },
-  {
-    "ro": "a pretinde",
-    "en": "to pretend"
-  },
-  {
-    "ro": "a suporta",
-    "en": "to endure, to bear"
-  },
-  {
-    "ro": "a turci",
-    "en": "to Turkify"
-  },
-  {
-    "ro": "a traduce",
-    "en": "to translate"
-  },
-  {
-    "ro": "a aminti",
-    "en": "to remind"
-  },
-  {
-    "ro": "a parca",
-    "en": "to park"
-  },
-  {
-    "ro": "a aventura",
-    "en": "To take a risky or dangerous action"
-  },
-  {
-    "ro": "a medalia",
-    "en": "to medal"
-  },
-  {
-    "ro": "a exprima",
-    "en": "to express"
-  },
-  {
-    "ro": "a indica",
-    "en": "to indicate"
-  },
-  {
-    "ro": "a elibera",
-    "en": "to free, set free, release"
-  },
-  {
-    "ro": "a pisici",
-    "en": "to act like a cat"
-  },
-  {
-    "ro": "a aduna",
-    "en": "to gather, to collect"
-  },
-  {
-    "ro": "a confirma",
-    "en": "to confirm"
-  },
-  {
-    "ro": "a elimina",
-    "en": "to eliminate"
-  },
-  {
-    "ro": "a imagina",
-    "en": "to imagine"
-  },
-  {
-    "ro": "a părăsi",
-    "en": "to abandon, neglect, forsake, leave"
-  },
-  {
-    "ro": "a apropia",
-    "en": "to bring near"
-  },
-  {
-    "ro": "a trezi",
-    "en": "to get up, wake up"
-  },
-  {
-    "ro": "a cruci",
-    "en": "to be wonderstruck, dumbfounded, bewildered"
-  },
-  {
-    "ro": "a adânci",
-    "en": "to deepen"
-  },
-  {
-    "ro": "a lipsi",
-    "en": "to deprive"
-  },
-  {
-    "ro": "a vindeca",
-    "en": "to heal, cure"
+    "ro": "a scădea",
+    "en": "to decrease, diminish, shrink, mitigate, reduce"
   },
   {
     "ro": "a studia",
     "en": "to study"
   },
   {
-    "ro": "a afecta",
-    "en": "to affect"
+    "ro": "a respecta",
+    "en": "to respect"
+  },
+  {
+    "ro": "a pretinde",
+    "en": "to pretend"
+  },
+  {
+    "ro": "a trezi",
+    "en": "to get up, wake up"
+  },
+  {
+    "ro": "a rezolva",
+    "en": "to resolve"
+  },
+  {
+    "ro": "a conferi",
+    "en": "to grant, to confer, to bestow, to award"
+  },
+  {
+    "ro": "a traduce",
+    "en": "to translate"
+  },
+  {
+    "ro": "a fura",
+    "en": "to steal"
+  },
+  {
+    "ro": "a striga",
+    "en": "to call"
+  },
+  {
+    "ro": "a spăla",
+    "en": "to wash"
+  },
+  {
+    "ro": "a defini",
+    "en": "to define"
+  },
+  {
+    "ro": "a prevedea",
+    "en": "to foresee, anticipate"
+  },
+  {
+    "ro": "a găzdui",
+    "en": "to accommodate, to host"
+  },
+  {
+    "ro": "a îndeplini",
+    "en": "to fulfill"
+  },
+  {
+    "ro": "a băga",
+    "en": "to insert, put in, put into"
+  },
+  {
+    "ro": "a combina",
+    "en": "to combine"
+  },
+  {
+    "ro": "a înconjura",
+    "en": "to encircle, surround"
+  },
+  {
+    "ro": "a înceta",
+    "en": "to stop, cease, end"
+  },
+  {
+    "ro": "a evolua",
+    "en": "to evolve"
+  },
+  {
+    "ro": "a consuma",
+    "en": "to consume"
+  },
+  {
+    "ro": "a situa",
+    "en": "to locate"
+  },
+  {
+    "ro": "a prăda",
+    "en": "to plunder, pillage, sack, rob, loot, ravage, ransack"
+  },
+  {
+    "ro": "a semna",
+    "en": "to sign"
+  },
+  {
+    "ro": "a confirma",
+    "en": "to confirm"
+  },
+  {
+    "ro": "a măsura",
+    "en": "to measure"
+  },
+  {
+    "ro": "a suporta",
+    "en": "to endure, to bear"
+  },
+  {
+    "ro": "a remăsura",
+    "en": "to remeasure"
+  },
+  {
+    "ro": "a constata",
+    "en": "to notice"
+  },
+  {
+    "ro": "a deranja",
+    "en": "to derange, disarrange"
   },
   {
     "ro": "a expune",
     "en": "to exhibit, to lay out, to expose, to make known"
   },
   {
-    "ro": "a organiza",
-    "en": "to organise, to arrange"
+    "ro": "a preciza",
+    "en": "to state, to specify"
   },
   {
-    "ro": "a mândri",
-    "en": "to be proud of"
+    "ro": "a părăsi",
+    "en": "to abandon, neglect, forsake, leave"
   },
   {
-    "ro": "a anunța",
-    "en": "to announce"
+    "ro": "a încadra",
+    "en": "to frame, enframe, harmonize with"
+  },
+  {
+    "ro": "a nota",
+    "en": "to make a note of, note down in writing"
   },
   {
     "ro": "a identifica",
@@ -1336,131 +1304,131 @@
     "en": "to reject"
   },
   {
-    "ro": "a rezerva",
-    "en": "to reserve"
-  },
-  {
-    "ro": "a respecta",
-    "en": "to respect"
-  },
-  {
-    "ro": "a minciuni",
-    "en": "to lie"
-  },
-  {
-    "ro": "a îndrepta",
-    "en": "to straighten"
-  },
-  {
-    "ro": "a înlocui",
-    "en": "to substitute, replace, take the place of"
+    "ro": "a curăța",
+    "en": "to clean"
   },
   {
     "ro": "a opune",
     "en": "to oppose"
   },
   {
-    "ro": "a prelua",
-    "en": "to take over"
+    "ro": "a vizita",
+    "en": "to visit"
   },
   {
-    "ro": "a dispărea",
-    "en": "to disappear, vanish"
+    "ro": "a regăsi",
+    "en": "to retrieve"
   },
   {
-    "ro": "a aprecia",
-    "en": "to appreciate"
+    "ro": "a furniza",
+    "en": "to provide"
   },
   {
-    "ro": "a conta",
-    "en": "to count"
+    "ro": "a figura",
+    "en": "to appear"
   },
   {
-    "ro": "a interpreta",
-    "en": "to interpret"
+    "ro": "a apăsa",
+    "en": "to press"
   },
   {
-    "ro": "a minți",
-    "en": "to lie"
+    "ro": "a ierta",
+    "en": "to forgive"
   },
   {
-    "ro": "a acorda",
-    "en": "to grant, allow, give, accord, permit, confer, vouchsafe"
+    "ro": "a circula",
+    "en": "to circulate"
   },
   {
-    "ro": "a contacta",
-    "en": "to contact"
+    "ro": "a intenționa",
+    "en": "to intend"
   },
   {
-    "ro": "a implica",
-    "en": "to imply"
+    "ro": "a apuca",
+    "en": "to grab, grip, grasp, seize"
+  },
+  {
+    "ro": "a genera",
+    "en": "to generate"
+  },
+  {
+    "ro": "a comporta",
+    "en": "to behave, to conduct, comport oneself"
+  },
+  {
+    "ro": "a alega",
+    "en": "to latch on to someone, follow them around or bother them"
+  },
+  {
+    "ro": "a fugi",
+    "en": "to run"
   },
   {
     "ro": "a pătrunde",
     "en": "to penetrate, permeate, pervade"
   },
   {
-    "ro": "a repeta",
-    "en": "to repeat"
-  },
-  {
-    "ro": "a semna",
-    "en": "to sign"
+    "ro": "a reieși",
+    "en": "to emerge, follow, result, be apparent as a conclusion"
   },
   {
     "ro": "a râde",
     "en": "to laugh"
   },
   {
-    "ro": "a chema",
-    "en": "to call"
+    "ro": "a rezista",
+    "en": "to resist"
   },
   {
-    "ro": "a recupera",
-    "en": "to recover, recuperate"
-  },
-  {
-    "ro": "a publica",
-    "en": "to publish"
-  },
-  {
-    "ro": "a prefera",
-    "en": "to prefer"
+    "ro": "a împiedica",
+    "en": "to hinder"
   },
   {
     "ro": "a reține",
     "en": "to retain"
   },
   {
-    "ro": "a cota",
-    "en": "to quote, list"
+    "ro": "a apăra",
+    "en": "to protect, defend, guard"
   },
   {
     "ro": "a tinde",
     "en": "to stretch, extend"
   },
   {
-    "ro": "a spori",
-    "en": "to advance, make progress/headway"
+    "ro": "a îndepărta",
+    "en": "to estrange from, distance from"
   },
   {
-    "ro": "a parola",
-    "en": "to password"
+    "ro": "a poseda",
+    "en": "to own"
   },
   {
-    "ro": "a transporta",
-    "en": "to transport"
+    "ro": "a angaja",
+    "en": "to employ, hire"
   },
   {
-    "ro": "a porci",
-    "en": "to insult"
+    "ro": "a alătura",
+    "en": "to join"
   },
   {
-    "ro": "a împreuna",
-    "en": "to join, combine, put together, couple, unite"
+    "ro": "a corespunde",
+    "en": "to correspond"
   },
   {
-    "ro": "a urgenta",
-    "en": "to expedite"
+    "ro": "a speria",
+    "en": "to scare, to frighten"
+  },
+  {
+    "ro": "a certa",
+    "en": "to quarrel, squabble, argue, altercate, row, argufy, wrangle, fall out with someone"
+  },
+  {
+    "ro": "a adopta",
+    "en": "to adopt"
+  },
+  {
+    "ro": "a relua",
+    "en": "to take back, retake"
   }
 ]
