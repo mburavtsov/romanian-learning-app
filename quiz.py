@@ -3,12 +3,29 @@ import random
 from pathlib import Path
 
 VERBS_PATH = Path(__file__).parent / "data" / "verbs.json"
+CONJUGATIONS_PATH = Path(__file__).parent / "data" / "conjugations.json"
+PERSON_LABELS = ["eu", "tu", "el/ea", "noi", "voi", "ei/ele"]
 MASTERY_COUNT = 10  # must get all MASTERY_COUNT recent answers correct to be mastered
 
 
 def load_verbs() -> list[dict]:
     with open(VERBS_PATH, encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_conjugations() -> dict[str, list[str]]:
+    """Present-tense forms per verb, built by scripts/build_conjugations.py."""
+    if not CONJUGATIONS_PATH.exists():
+        return {}
+    with open(CONJUGATIONS_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def present_line(forms: list[str] | None) -> str:
+    """One line of present tense for the answer card, or "" if unknown."""
+    if not forms or len(forms) != len(PERSON_LABELS):
+        return ""
+    return "Prezent: " + " · ".join(f"{p} {f}" for p, f in zip(PERSON_LABELS, forms))
 
 
 def is_mastered(history: list[bool]) -> bool:

@@ -1,0 +1,394 @@
+{
+  "a fi": [
+    "sunt",
+    "ești",
+    "este",
+    "suntem",
+    "sunteți",
+    "sunt"
+  ],
+  "a face": [
+    "fac",
+    "faci",
+    "face",
+    "facem",
+    "faceți",
+    "fac"
+  ],
+  "a avea": [
+    "am",
+    "ai",
+    "are",
+    "avem",
+    "aveți",
+    "au"
+  ],
+  "a putea": [
+    "pot",
+    "poți",
+    "poate",
+    "putem",
+    "puteți",
+    "pot"
+  ],
+  "a prima": [
+    "primez",
+    "primezi",
+    "primează",
+    "primăm",
+    "primați",
+    "primează"
+  ],
+  "a spune": [
+    "spun",
+    "spui",
+    "spune",
+    "spunem",
+    "spuneți",
+    "spun"
+  ],
+  "a voi": [
+    "voiesc",
+    "voiești",
+    "voiește",
+    "voim",
+    "voiți",
+    "voiesc"
+  ],
+  "a da": [
+    "dau",
+    "dai",
+    "dă",
+    "dăm",
+    "dați",
+    "dau"
+  ],
+  "a data": [
+    "datez",
+    "datezi",
+    "datează",
+    "datăm",
+    "datați",
+    "datează"
+  ],
+  "a casa": [
+    "casez",
+    "casezi",
+    "casează",
+    "casăm",
+    "casați",
+    "casează"
+  ],
+  "a urma": [
+    "urmez",
+    "urmezi",
+    "urmează",
+    "urmăm",
+    "urmați",
+    "urmează"
+  ],
+  "a cauza": [
+    "cauzez",
+    "cauzezi",
+    "cauzează",
+    "cauzăm",
+    "cauzați",
+    "cauzează"
+  ],
+  "a duce": [
+    "duc",
+    "duci",
+    "duce",
+    "ducem",
+    "duceți",
+    "duc"
+  ],
+  "a baza": [
+    "bazez",
+    "bazezi",
+    "bazează",
+    "bazăm",
+    "bazați",
+    "bazează"
+  ],
+  "a vrea": [
+    "vreau",
+    "vrei",
+    "vrea",
+    "vrem",
+    "vreți",
+    "vor"
+  ],
+  "a pune": [
+    "pun",
+    "pui",
+    "pune",
+    "punem",
+    "puneți",
+    "pun"
+  ],
+  "a români": [
+    "românesc",
+    "românești",
+    "românește",
+    "românim",
+    "româniți",
+    "românesc"
+  ],
+  "a vedea": [
+    "văd",
+    "vezi",
+    "vede",
+    "vedem",
+    "vedeți",
+    "văd"
+  ],
+  "a ajunge": [
+    "ajung",
+    "ajungi",
+    "ajunge",
+    "ajungem",
+    "ajungeți",
+    "ajung"
+  ],
+  "a echipa": [
+    "echipez",
+    "echipezi",
+    "echipează",
+    "echipăm",
+    "echipați",
+    "echipează"
+  ],
+  "a începe": [
+    "încep",
+    "începi",
+    "începe",
+    "începem",
+    "începeți",
+    "încep"
+  ],
+  "a rămâne": [
+    "rămân",
+    "rămâi",
+    "rămâne",
+    "rămânem",
+    "rămâneți",
+    "rămân"
+  ],
+  "a ajuta": [
+    "ajut",
+    "ajuți",
+    "ajută",
+    "ajutăm",
+    "ajutați",
+    "ajută"
+  ],
+  "a aduce": [
+    "aduc",
+    "aduci",
+    "aduce",
+    "aducem",
+    "aduceți",
+    "aduc"
+  ],
+  "a război": [
+    "războiesc",
+    "războiești",
+    "războiește",
+    "războim",
+    "războiți",
+    "războiesc"
+  ],
+  "a forma": [
+    "formez",
+    "formezi",
+    "formează",
+    "formăm",
+    "formați",
+    "formează"
+  ],
+  "a merge": [
+    "merg",
+    "mergi",
+    "merge",
+    "mergem",
+    "mergeți",
+    "merg"
+  ],
+  "a afla": [
+    "aflu",
+    "afli",
+    "află",
+    "aflăm",
+    "aflați",
+    "află"
+  ],
+  "a republica": [
+    "republic",
+    "republici",
+    "republică",
+    "republicăm",
+    "republicați",
+    "republică"
+  ],
+  "a ului": [
+    "uluiesc",
+    "uluiești",
+    "uluiește",
+    "uluim",
+    "uluiți",
+    "uluiesc"
+  ],
+  "a lista": [
+    "listez",
+    "listezi",
+    "listează",
+    "listăm",
+    "listați",
+    "listează"
+  ],
+  "a trece": [
+    "trec",
+    "treci",
+    "trece",
+    "trecem",
+    "treceți",
+    "trec"
+  ],
+  "a scrie": [
+    "scriu",
+    "scrii",
+    "scrie",
+    "scriem",
+    "scrieți",
+    "scriu"
+  ],
+  "a maria": [
+    "mariez",
+    "mariezi",
+    "mariază",
+    "mariem",
+    "mariați",
+    "mariază"
+  ],
+  "a găsi": [
+    "găsesc",
+    "găsești",
+    "găsește",
+    "găsim",
+    "găsiți",
+    "găsesc"
+  ],
+  "a exista": [
+    "exist",
+    "exiști",
+    "există",
+    "existăm",
+    "existați",
+    "există"
+  ],
+  "a lua": [
+    "iau",
+    "iei",
+    "ia",
+    "luăm",
+    "luați",
+    "iau"
+  ],
+  "a ține": [
+    "țin",
+    "ții",
+    "ține",
+    "ținem",
+    "țineți",
+    "țin"
+  ],
+  "a cere": [
+    "cer",
+    "ceri",
+    "cere",
+    "cerem",
+    "cereți",
+    "cer"
+  ],
+  "a mașina": [
+    "mașinez",
+    "mașinezi",
+    "mașinează",
+    "mașinăm",
+    "mașinați",
+    "mașinează"
+  ],
+  "a conține": [
+    "conțin",
+    "conții",
+    "conține",
+    "conținem",
+    "conțineți",
+    "conțin"
+  ],
+  "a media": [
+    "mediez",
+    "mediezi",
+    "mediază",
+    "mediem",
+    "mediați",
+    "mediază"
+  ],
+  "a permite": [
+    "permit",
+    "permiți",
+    "permite",
+    "permitem",
+    "permiteți",
+    "permit"
+  ],
+  "a clasa": [
+    "clasez",
+    "clasezi",
+    "clasează",
+    "clasăm",
+    "clasați",
+    "clasează"
+  ],
+  "a lupta": [
+    "lupt",
+    "lupți",
+    "luptă",
+    "luptăm",
+    "luptați",
+    "luptă"
+  ],
+  "a mâna": [
+    "mân",
+    "mâni",
+    "mână",
+    "mânăm",
+    "mânați",
+    "mână"
+  ],
+  "a lumina": [
+    "luminez",
+    "luminezi",
+    "luminează",
+    "luminăm",
+    "luminați",
+    "luminează"
+  ],
+  "a folosi": [
+    "folosesc",
+    "folosești",
+    "folosește",
+    "folosim",
+    "folosiți",
+    "folosesc"
+  ],
+  "a include": [
+    "includ",
+    "incluzi",
+    "include",
+    "includem",
+    "includeți",
+    "includ"
+  ]
+}

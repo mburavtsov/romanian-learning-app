@@ -33,3 +33,14 @@ def test_record_answer_keeps_only_the_last_ten(tmp_path, monkeypatch):
     for correct in [True] * 9 + [False, True]:
         asyncio.run(db.record_answer(1, "a fi", "ro_en", correct))
     assert asyncio.run(db.get_history(1, "a fi", "ro_en")) == [True] * 8 + [False, True]
+
+
+def test_present_line_has_all_six_forms():
+    line = quiz.present_line(["fac", "faci", "face", "facem", "faceți", "fac"])
+    assert line.startswith("Prezent: eu fac")
+    assert line.count("·") == 5
+
+
+def test_present_line_is_empty_without_data():
+    assert quiz.present_line(None) == ""
+    assert quiz.present_line(["fac"]) == ""

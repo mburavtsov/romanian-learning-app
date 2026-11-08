@@ -32,6 +32,7 @@ logger = logging.getLogger(__name__)
 
 # Loaded once at startup
 verbs: list[dict] = []
+conjugations: dict[str, list[str]] = {}
 
 # In-memory session state per user_id
 sessions: dict[int, dict] = {}
@@ -340,10 +341,13 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     card_message = cast(Message, query.message)
     original = card_message.text or ""
 
+    forms = quiz.present_line(conjugations.get(word_ro))
+    forms_text = f"\n\n{forms}" if forms else ""
+
     if is_correct:
-        result = f"✅ *Correct!*\n\n_{original}_"
+        result = f"✅ *Correct!*\n\n_{original}_{forms_text}"
     else:
-        result = f"❌ *Wrong* — the answer was: *{correct_answer}*\n\n_{original}_"
+        result = f"❌ *Wrong* — the answer was: *{correct_answer}*\n\n_{original}_{forms_text}"
 
     session.pop("card_msg_id", None)  # this card's buttons are gone now
     await query.edit_message_text(result, parse_mode="Markdown", reply_markup=None)
@@ -373,8 +377,9 @@ async def on_update(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 async def post_init(application: Application) -> None:
-    global verbs
+    global verbs, conjugations
     verbs = quiz.load_verbs()
+    conjugations = quiz.load_conjugations()
     await db.init_db()
     logger.info("Loaded %d verbs. DB ready.", len(verbs))
 
