@@ -52,8 +52,9 @@ def build_card(word: dict, verbs: list[dict], direction: str) -> dict:
         correct_answer = word["ro"]
         pool = [v["ro"] for v in verbs if v["ro"] != word["ro"]]
 
-    # Deduplicate pool entries identical to the correct answer
-    pool = [opt for opt in pool if opt != correct_answer]
+    # Deduplicate pool entries identical to the correct answer; different verbs
+    # can share a gloss, which would otherwise show two identical buttons.
+    pool = list(dict.fromkeys(opt for opt in pool if opt != correct_answer))
     distractors = random.sample(pool, k=min(2, len(pool)))
 
     choices = [correct_answer] + distractors

@@ -5,6 +5,7 @@ from typing import cast
 
 from dotenv import load_dotenv
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, Update
+from telegram.error import TelegramError
 from telegram.ext import (
     Application,
     CallbackQueryHandler,
@@ -74,8 +75,21 @@ async def _send_summary_and_menu(
     )
 
 
+async def _drop_card_keyboard(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Disable the buttons of a card that is still open, so it cannot be answered twice."""
+    old = _session(user_id).pop("card_msg_id", None)
+    if old is not None:
+        try:
+            await context.bot.edit_message_reply_markup(
+                chat_id=user_id, message_id=old, reply_markup=None
+            )
+        except TelegramError:
+            pass  # message deleted or already bare
+
+
 async def _send_card(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
     session = _session(user_id)
+    await _drop_card_keyboard(user_id, context)
     all_stats = await db.get_all_stats(user_id)
     stats = {(row[0], row[1]): row[2] for row in all_stats}
 
@@ -83,8 +97,6 @@ async def _send_card(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
     word = quiz.select_word(verbs, stats, direction)
     card = quiz.build_card(word, verbs, direction)
 
-    session["current_word"] = word["ro"]
-    session["current_direction"] = direction
     session["correct_answer"] = card["correct_answer"]
 
     card_num = session["session_total"] + 1
@@ -101,12 +113,13 @@ async def _send_card(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
         for i in range(len(card["choices"]))
     ] + [[InlineKeyboardButton("🛑 Stop session", callback_data="menu:stop")]]
 
-    await context.bot.send_message(
+    sent = await context.bot.send_message(
         chat_id=user_id,
         text=progress + card["question"],
         reply_markup=InlineKeyboardMarkup(keyboard),
         parse_mode="Markdown",
     )
+    session["card_msg_id"] = sent.message_id
 
 
 # ── Command handlers ──────────────────────────────────────────────────────────
@@ -133,9 +146,7 @@ async def cmd_play(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await _send_card(user_id, context)
 
 
-async def cmd_stats(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    assert update.message and update.effective_user
-    user_id = update.effective_user.id
+async def _stats_text(user_id: int) -> str:
     session = _session(user_id)
     correct = session.get("session_correct", 0)
     total = session.get("session_total", 0)
@@ -153,25 +164,34 @@ async def cmd_stats(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     lines.append(f"*Words seen (all time):* {words_seen}")
     lines.append(f"*Mastered words:* {mastered} 🏆")
     lines.append(f"*Total in deck:* {len(verbs)}")
+    return "\n".join(lines)
 
+
+async def cmd_stats(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    assert update.message and update.effective_user
     await update.message.reply_text(
-        "\n".join(lines),
+        await _stats_text(update.effective_user.id),
         reply_markup=_main_menu(),
         parse_mode="Markdown",
     )
 
 
+RESET_PROMPT = "⚠️ This will delete *all* your word history and mastery progress. Are you sure?"
+
+
+def _reset_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton("Yes, reset everything", callback_data="menu:reset_confirm"),
+            InlineKeyboardButton("Cancel", callback_data="menu:reset_cancel"),
+        ]
+    ])
+
+
 async def cmd_reset(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     assert update.message
     await update.message.reply_text(
-        "⚠️ This will delete *all* your word history and mastery progress. Are you sure?",
-        reply_markup=InlineKeyboardMarkup([
-            [
-                InlineKeyboardButton("Yes, reset everything", callback_data="menu:reset_confirm"),
-                InlineKeyboardButton("Cancel", callback_data="menu:reset_cancel"),
-            ]
-        ]),
-        parse_mode="Markdown",
+        RESET_PROMPT, reply_markup=_reset_keyboard(), parse_mode="Markdown"
     )
 
 
@@ -196,23 +216,8 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
         return
 
     if data == "menu:stats":
-        session = _session(user_id)
-        correct = session.get("session_correct", 0)
-        total = session.get("session_total", 0)
-        all_stats = await db.get_all_stats(user_id)
-        mastered = sum(1 for _, _, h in all_stats if quiz.is_mastered(h))
-        words_seen = len({word_ro for word_ro, _, _ in all_stats})
-        lines = ["📊 *Your Progress*\n"]
-        if total > 0:
-            pct = round(correct / total * 100)
-            lines.append(f"*This session:* {correct}/{total} correct ({pct}%)")
-        else:
-            lines.append("*This session:* Not started yet")
-        lines.append(f"*Words seen (all time):* {words_seen}")
-        lines.append(f"*Mastered words:* {mastered} 🏆")
-        lines.append(f"*Total in deck:* {len(verbs)}")
         await query.edit_message_text(
-            "\n".join(lines) + "\n\nWhat would you like to do?",
+            await _stats_text(user_id) + "\n\nWhat would you like to do?",
             reply_markup=_main_menu(),
             parse_mode="Markdown",
         )
@@ -225,14 +230,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 
     if data == "menu:reset_ask":
         await query.edit_message_text(
-            "⚠️ This will delete *all* your word history and mastery progress. Are you sure?",
-            reply_markup=InlineKeyboardMarkup([
-                [
-                    InlineKeyboardButton("Yes, reset everything", callback_data="menu:reset_confirm"),
-                    InlineKeyboardButton("Cancel", callback_data="menu:reset_cancel"),
-                ]
-            ]),
-            parse_mode="Markdown",
+            RESET_PROMPT, reply_markup=_reset_keyboard(), parse_mode="Markdown"
         )
         return
 
@@ -283,6 +281,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     else:
         result = f"❌ *Wrong* — the answer was: *{correct_answer}*\n\n_{original}_"
 
+    session.pop("card_msg_id", None)  # this card's buttons are gone now
     await query.edit_message_text(result, parse_mode="Markdown", reply_markup=None)
 
     if session["session_total"] >= SESSION_SIZE:
